@@ -39,7 +39,7 @@ Python code: Turn-Taking\_Diff\_and\_Total\_Calc.py
 Chikersal, P., Tomprou, M., Kim, Y. J., Woolley, A. W., & Dabbish, L. (2017, February). Deep structures of collaboration: Physiological correlates of collective intelligence and group satisfaction. In Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing (pp. 873-888).
 
 ## If you use the code for equality in turn-taking, please cite:
-
+Tomprou, M., Kim, Y. J., Chikersal, P.,Woolley, A. W., & Dabbish, L. (forthcoming). Speaking out of turn: How video conferencing reduces vocal synchrony and collective intelligence. PLOS ONE, 2021.
 
 
 # References
