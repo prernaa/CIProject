@@ -10,12 +10,12 @@ After extracting features (i.e. facial expression action units) from OpenFace, r
 ## For equality in turn-taking
 1. Extracting wav/m4a from mp4
 
-python code: extractAudioFromVideo.py OR extractAudioFromVideoWAV.py
+Python code: extractAudioFromVideo.py OR extractAudioFromVideoWAV.py
 generates m4a or wav files in the skype_audio directory for cxNNNa and cxNNNb
 
 2. Voice Activity Detection (VAD)
 
-matlab code: audioAnalysis_genVAD.m (set "format" variable to wav or m4a before running)
+Matlab code: audioAnalysis_genVAD.m (set "format" variable to wav or m4a before running)
 generates mat files in "skype_audio/VAD" or "skype_audio/VADfromWav" for cxNNNa and cxNNNb
 These mat files contain (i) ya/yb (the signal), (ii) Outs_Final, (iii) Outs_Sadjadi, (iv) Outs_New', (v) 't'
 
