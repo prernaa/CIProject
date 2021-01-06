@@ -9,23 +9,28 @@ After extracting features (i.e. facial expression action units) from OpenFace, r
 
 ## For equality in turn-taking
 1. Extracting wav/m4a from mp4
+
 python code: extractAudioFromVideo.py OR extractAudioFromVideoWAV.py
 generates m4a or wav files in the skype_audio directory for cxNNNa and cxNNNb
 
 2. Voice Activity Detection (VAD)
+
 matlab code: audioAnalysis_genVAD.m (set "format" variable to wav or m4a before running)
 generates mat files in "skype_audio/VAD" or "skype_audio/VADfromWav" for cxNNNa and cxNNNb
 These mat files contain (i) ya/yb (the signal), (ii) Outs_Final, (iii) Outs_Sadjadi, (iv) Outs_New', (v) 't'
 
 3. Extracting turns using VAD output
+
 Matlab code: extractTurns.m (set "format" variable to wav or m4a before running)
 generates mat files in "Turns" or "TurnsFromWav" under cxNNN (session folder)
 These mat files contain (i) Turns (whose turn was it?), (ii) Interrupts (who interrupted whom?), (iii) Pauses
 
 4. Getting turn-related stats for each partner in the dyad
+
 Matlab code: OutputTurnStats.m
 
 5. Calculate difference in turns, samples, etc as measures of equality in turn-taking
+
 Python code: Turn-Taking\_Diff\_and\_Total\_Calc.py
 
 
@@ -35,4 +40,10 @@ Chikersal, P., Tomprou, M., Kim, Y. J., Woolley, A. W., & Dabbish, L. (2017, Feb
 
 ## If you use the code for equality in turn-taking, please cite:
 
+
+
+# References
+
+For Voice Activity Detection (VAD), we used a tool called "Covarep" (https://covarep.github.io/covarep/):
+G. Degottex, J. Kane, T. Drugman, T. Raitio and S. Scherer, "COVAREP - A collaborative voice analysis repository for speech technologies", In Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Florence, Italy 2014.
 
